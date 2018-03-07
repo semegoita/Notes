@@ -1,0 +1,137 @@
+Notes
+
+* what is id and classes.
+In CSS Every element I s a box.
+difference between margin and padding.
+Padding is the space between the content and the border
+Margin is the space between boxes.
+
+Many elements are rendered as blocks by a browser.
+Block elements:
+Inline elements: word wraps
+
+Refactor: making something better and cleaner.
+
+Fot clearing after float
+.selector {
+clear: both;
+
+.clearfis:: after {
+content: “”’;
+display block;
+clear:
+}
+
+positioning
+default positioning is static.
+Absolute: relative to the entire page/website.
+Or relative to its parent element./if positioned absolute.
+Relative. Starting from the existing position.
+
+Z-index. Postionning like the third dimentions on top of  one another.
+By default it is 0.
+
+Escaping is giving –ve value. Is out of the visible area.
+
+Refer about:
+
+Google developer tools.
+
+
+
+
+Libraries
+
+Are set of codes written by other people to be used by you.
+
+Css resets (is a library) help us write cross browser codes.
+
+Semerehg.github.io publish it like this.
+
+Line length= usually 50-75
+
+Sans-serif vs serif – font type more common the firsrt one
+
+Pseudo classes: are selectors that help us select certain aspects like
+: hover;
+: link;
+focus
+: last-of-type;
+
+button with various states
+default
+hover
+focus
+active
+
+Bootstrap.
+Wireframe: is the most important step in designing a product.
+It is a sketch of your product.
+Wireframe tools to be referred.
+Designing with a grid in mind.
+
+Bootstrap see everything as row and columns.
+Every bootstrap grid is made up of
+•    Container
+•    Rows
+•    Columns
+Lg,md,xs,sm are the treshholds that specify. The size of our screen.
+•
+Mark-up is the picture look like of the website to look like.
+
+Donot add content to a row always put them in columns
+
+Humberger tabs gets created automatically by bootstrap.
+•    Panel gives something like borders.
+We can create rows inside columns.
+Always start with creating rows and then columns.
+Media queries
+•    this gives rules to bootstrap
+•    if the browser is between this width use this css.
+Eg. @media screen ……………
+@ media print make it better looking for printing.
+Usually media queries are written at the end of your code to overwrite what is written.
+Do activity 17 in sec 2.
+
+Formatting languages(html and css)
+
+
+Java Script
+Basic variables:
+Variable: labeled container for data.
+Variable has a name and a value.
+•    Equal sign is assignment in variables not equal it puts staff in a container(variable).
+To organize data entered from users has to be organized like names, and staff.
+
+Java script is case sensitive.
+Use variables names in camel case style.
+
+Syntax for variables in java script
+
+Console.log(“teacher”); important for debagging.
+Console.log(variablename);
+
+Resolve: means it uses assignment from the variable and use it for computation.
+First thing to do while dealing with java script is insert conslole.log.
+You can insert console.log every few line of code.
+•    Alert
+•    Prompt
+•    Confirm
+document.write(); spits js codes on the screen.
+
+If (condition) {
+•    Give a value here if condition is met
+}
+else {
+•    give value you want to be displayed.
+}
+
+double equal tries to convert file types so not consistent. Advised not to use it.
+
+
+
+
+
+
+
+
