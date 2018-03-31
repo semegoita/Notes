@@ -128,8 +128,35 @@ else {
 
 double equal tries to convert file types so not consistent. Advised not to use it.
 
+functions
+   1 input
+   2 output
+   3 sideeffects
+   
+   persistence data that persists
+   
+client side storage.
+   1 cookies
+   2 local storage
+
+server side storage
+    server-side is basically the same as backend
+    Databases are server side.
+    conbined each web app/compandy has unified storage
+   
+there are 3 different types os client side storeage
+    1 local storage
+    2 session storage
+            exactly the same as local storage, but is auto deleted after a little bit of time
+    3 cookies
+            - archaic, used today only ofr certain tracking things
 
 
+there is a local storage for every website and different websites can access each others local strorage.
+the local storage has three pertinent methods
+        1 clear();
+        2 set();
+        3 get();
 
 
 
