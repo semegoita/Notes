@@ -158,7 +158,77 @@ the local storage has three pertinent methods
         2 set();
         3 get();
 
+call back functions are funcions that are passed as arguments to be called back latter.
 
+to access data inside a funcjion out of scope we can use return or the better way to use call back.
 
+DEFINITIONS
 
+- Schema - shape of data
+  - More specifically:
+    - The shape of data in a database
+    - That is, what are our tables, columns, and types
+    - The structure, not the content
+    - Columns and tables only
+    - Names of columns, data types
+-SEED 
+        data to feed schema.
+- Migration
+  - Code that modifies schemas of existing databases
+  - Way to create tables, add rows, delete rows, etc
 
+DATA BUZZWORDS
+        Small data
+                put everything into a file
+                put everything in to a variable
+                arrays, ovjects, etc anydata type in node 
+                1000s
+        Medium data
+                100000s
+                too big to be easinly used in a single file 
+                more than one person might be using this 
+                use databases
+        Big data
+                Too big for a single computer to use 
+        Index
+            property of a column
+            some columns 
+            
+    Query speeds tips
+    * If you are runnning it like a report then speed generally doesniot matter
+    * IF you are running it on every request, then speeds Deoes matter.
+                
+MVC is a programming paradigm, an "organizationl system" for code
+
+- Model
+  * Purpose: Store and retrieve data in a clean and dependable way
+  * Gatekeeper to persistence in the database
+  * Code that does all database work
+- View
+  * Purpose: Displaying information to client
+  * HTML / CSS / Frontend JavaScript
+  * Often templated using a templating language
+- Controller
+  * Purpose: "Business logic", make decisions on how the application should function
+  * All the "moving parts" of the app
+  * We use express for this
+
+OOP - Object Oriented Programming
+- Multi page app
+  - Doesn't necessarily need front-end JavaScript
+  - Has "real links" - e.g. <a href="/other/page">click</a>
+  - Each page is generated typically with templating
+    languages on the backend with the data pre-inserted
+  - Backend-heavy: Logic of assembling HTML takes place on the
+    backend
+
+- Single page app
+  - Sends single HTML file that contains javascript code
+  - Don't have "real links", just buttons that trigger
+    front-end JavaScript code
+  - This JavaScript code uses GET and POST requests (AJAX)
+    and DOM manipulation to make the interactive website
+  - It queries GET and POST routes on the server that return
+    JSON data from the DB
+  - Frontend-heavy: Logic of assembling HTML takes place on
+    the frontend
