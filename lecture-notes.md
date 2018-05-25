@@ -232,3 +232,64 @@ OOP - Object Oriented Programming
     JSON data from the DB
   - Frontend-heavy: Logic of assembling HTML takes place on
     the frontend
+
+
+    CRUD :
+    Request methods;
+      GEt:
+        read
+      post:
+        Create
+      delete:
+        delete
+      put:
+        update
+MVC
+
+- Model
+  - Store data
+  - Retrieve data
+  - The Gatekeeper to data: Clean and dependable way
+  - ORM
+
+- View
+  - Display info to the client
+  - Handlebars
+  - Frontend
+  - jQuery/React
+  -
+- Controller
+  - Router
+  - Business logic
+  - Make decisions on how the app should functoin
+  - express routes.
+
+
+    _______
+   | VIEW  |
+   |_______|
+  /_______/
+
+      |
+      |
+  (CONTROLLER)
+      |
+      |
+    MODEL
+
+app.get("/dog", function(req, res) {
+  // Handlebars requires an object to be sent to the dog.handlebars file. Lucky for us, animals[0] is an object!
+  
+  var dog = animals[0];
+  var pageTitle = 'Doggo time';
+
+  res.render('dog', {
+    title: pageTitle,
+    animalType: dog.animalType,
+    pet: dog.pet,
+    fierceness: dog.fierceness,
+  });
+});
+for (var i = 0; i < animals.length; i++) { // {{# each animals}}
+  animals[i].animalType;                   //   {{animalType}}
+}       
