@@ -251,21 +251,23 @@ MVC
   - Retrieve data
   - The Gatekeeper to data: Clean and dependable way
   - ORM
+      - a type of library
+      - object relational mapping.
+      - facilitates savinf and loading data from a database
+      - auto-generates SQL code to do tasks like saving and retriving objects to and from a database.
 
 - View
   - Display info to the client
   - Handlebars
   - Frontend
   - jQuery/React
-  -
+  
 - Controller
   - Router
   - Business logic
   - Make decisions on how the app should functoin
   - express routes.
-
-
-    _______
+ _______
    | VIEW  |
    |_______|
   /_______/
@@ -293,3 +295,51 @@ app.get("/dog", function(req, res) {
 for (var i = 0; i < animals.length; i++) { // {{# each animals}}
   animals[i].animalType;                   //   {{animalType}}
 }       
+
+SQUELIZE
+
+* MVC
+
+* model - sequelize
+
+* view - handlebars
+
+* controller - express
+
+----
+
+Sequelize is an ORM
+
+- Takes an object and turns it into a relationally stored data thingie in a database
+
+- Writes SQL for us
+
+- Generally, it creates a table for each Model, and stores every instance in a row
+
+-------------------
+
+CRUD
+  Create:
+    use create
+  Read:
+    findAll();
+    findOne();
+  update:
+    update
+  Delete:
+    destroy
+
+* Book.findOne
+* Book.findAll({
+where: {
+author: "Charles Dickens",
+}
+}).then(function (results) {
+
+});
+* Book.create
+
+Description of relation ships betwween data
+  1-one to one
+  2-one to many
+  3-many to many.
